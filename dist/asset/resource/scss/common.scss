@@ -1,0 +1,68 @@
+header {
+    width: 100%;
+
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1680px;
+    height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    .icon-text__wrap{ 
+        display: flex;
+        align-items: center;
+    }
+    .header-icon {
+        background-image: url("/dist/asset/resource/img/common/icon/userlmn_c0cc14acfec520c2bc91e4e38228ce34.png");
+        background-position: center;
+        height: 70px;
+        width: 70px;
+        background-size: cover;
+    }
+    .icon-title {
+        font-size: 1.5em;
+        font-weight: lighter;
+    }
+    .header-nav {
+        margin: 0 0 0 50px;
+        a {
+            font-size: 1em;
+            margin: 0 0 0 40px;
+        }
+    }
+    .header-button__wrap {
+        .login-button {
+            width: 140px;
+            height: 40px;
+            background: none;
+            border: 1px solid white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.5s ease;
+            &:hover {
+                background: white;
+                opacity: 0.5;
+                color: black;
+                border: 1px solid black;
+            }
+        }
+        .register-button {
+            margin: 0 0 0 20px;
+            width: 140px;
+            height: 40px;
+            background: none;
+            border: 1px solid white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.5s ease;
+            &:hover {
+                background: white;
+                opacity: 0.5;
+                color: black;
+                border: 1px solid black;
+            }
+        }
+    }
+}

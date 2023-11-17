@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Video</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #video-container {
+            position: relative;
+            width: 350px; /* 비디오 컨테이너의 너비 */
+            height: 360px; /* 비디오 컨테이너의 높이 */
+            overflow: hidden;
+        }
+
+        #rounded-video {
+            width: 1000px; /* 비디오의 너비를 100%로 설정하여 부모 컨테이너에 꽉 차게 만듭니다. */
+            height: 1000px; /* 비디오의 높이를 100%로 설정하여 부모 컨테이너에 꽉 차게 만듭니다. */
+            border-radius: 50%; /* 동그랗게 만듭니다. */
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video id="rounded-video" playsinline autoplay muted loop>
+            <!-- 동영상 파일의 경로를 넣어주세요 -->
+            <source src="./dist/asset/resource/video/earth_-_4788 (Original).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
