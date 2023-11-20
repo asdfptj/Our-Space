@@ -16,6 +16,7 @@ header {
   align-items: center;
 }
 .header-wrap a .header-icon {
+  margin: 0 0 0 50px;
   background-image: url("/dist/asset/resource/img/common/icon/mainlogo.png");
   background-position: center;
   height: 60px;
@@ -29,6 +30,9 @@ header {
   color: white;
   font-size: 1em;
   margin: 0 0 0 40px;
+}
+.header-wrap .header-button__wrap {
+  margin: 0 50px 0 0;
 }
 .header-wrap .header-button__wrap .login-button {
   color: white;

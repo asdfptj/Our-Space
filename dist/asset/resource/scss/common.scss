@@ -16,6 +16,7 @@ header {
     }
     a {
         .header-icon {
+            margin: 0 0 0 50px;
             background-image: url("/dist/asset/resource/img/common/icon/mainlogo.png");
             background-position: center;
             height: 60px;
@@ -33,6 +34,7 @@ header {
         }
     }
     .header-button__wrap {
+        margin: 0 50px 0 0;
         .login-button {
             color: white;
             width: 140px;

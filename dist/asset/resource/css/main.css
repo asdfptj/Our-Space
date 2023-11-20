@@ -13,7 +13,7 @@
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1000;
+  z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
@@ -333,7 +333,7 @@ footer .footer-wrap .footer-bottom__wrap {
   margin: 70px 0 0 0;
 }
 footer .footer-wrap .footer-bottom__wrap img {
-  width: 30px;
+  height: 30px;
   margin: 0 30px 0 30px;
 }
 footer .footer-wrap .footer-bottom__text {
