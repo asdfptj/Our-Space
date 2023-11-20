@@ -3,7 +3,6 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: white;
 }
 
 .video-background {
@@ -29,7 +28,8 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   width: 1680px;
   height: 960px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -37,55 +37,206 @@
 .main-wrap .main-container .earth-image {
   width: 500px;
 }
+.main-wrap .main-container .main-title {
+  font-size: 60px;
+  color: white;
+}
+.main-wrap .main-container .main-button {
+  margin: 0 0 60px 0;
+  color: white;
+  width: 170px;
+  height: 45px;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+.main-wrap .main-container .main-button:hover {
+  background: white;
+  opacity: 0.5;
+  color: black;
+  border: 1px solid black;
+}
 
-.first-wrap {
+.intro-wrap {
   width: 100%;
 }
-.first-wrap .first-container {
+.intro-wrap .intro-container {
   margin: 0 auto;
   width: 1680px;
   height: 948px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+.intro-wrap .intro-container .intro-title {
+  font-size: 30px;
+  color: white;
+  margin: 50px 0 0 50px;
+}
+.intro-wrap .intro-container .intro-menu__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 120px 0 0 50px;
+}
+.intro-wrap .intro-container .intro-menu__wrap .intro-menu {
+  width: 700px;
+  height: 350px;
+  margin: 0 110px 0 0;
+}
+.intro-wrap .intro-container .intro-menu__wrap .menu-title {
+  font-size: 23px;
+  font-weight: 900;
+  color: white;
+  margin: 0 0 30px 0;
+}
+.intro-wrap .intro-container .intro-menu__wrap .menu-detail {
+  color: white;
+  margin: 0 0 30px 0;
+}
+.intro-wrap .intro-container .intro-menu__wrap .menu-button {
+  color: white;
+  width: 130px;
+  height: 35px;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+.intro-wrap .intro-container .intro-menu__wrap .menu-button:hover {
+  background: white;
+  opacity: 0.5;
+  color: black;
+  border: 1px solid black;
+}
 
-.second-wrap {
+.middle-first__wrap {
   width: 100%;
 }
-.second-wrap .second-container {
+.middle-first__wrap .middle-first__container {
   margin: 0 auto;
   width: 1680px;
   height: 600px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+}
+.middle-first__wrap .middle-first__container .first-left {
+  margin: 0 0 0 50px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.middle-first__wrap .middle-first__container .first-left .mars-robot {
+  width: 700px;
+  border-radius: 5px;
+}
+.middle-first__wrap .middle-first__container .first-right {
+  width: 50%;
+  margin: 220px 0 0 0;
+}
+.middle-first__wrap .middle-first__container .first-right__title {
+  font-size: 23px;
+  font-weight: 900;
+  color: white;
+  margin: 0 0 40px 0;
+}
+.middle-first__wrap .middle-first__container .first-right__detail {
+  color: white;
 }
 
-.third-wrap {
+.middle-second__wrap {
   width: 100%;
 }
-.third-wrap .third-container {
+.middle-second__wrap .middle-second__container {
   margin: 0 auto;
   width: 1680px;
   height: 600px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+}
+.middle-second__wrap .middle-second__container .second-left {
+  width: 50%;
+  margin: 220px 0 0 50px;
+}
+.middle-second__wrap .middle-second__container .second-left__title {
+  font-size: 23px;
+  font-weight: 900;
+  color: white;
+  margin: 0 0 40px 0;
+}
+.middle-second__wrap .middle-second__container .second-left__detail {
+  color: white;
+}
+.middle-second__wrap .middle-second__container .second-right {
+  margin: 0 0 0 50px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.middle-second__wrap .middle-second__container .second-right .video-galaxy {
+  width: 700px;
+  border-radius: 5px;
 }
 
-.fourth-wrap {
+.solar-system__wrap {
   width: 100%;
 }
-.fourth-wrap .fourth-container {
+.solar-system__wrap .solar-system__container {
   margin: 0 auto;
   width: 1680px;
   height: 738px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-.fourth-wrap {
-  width: 100%;
+.solar-system__wrap .solar-system__container .solar-system__title {
+  margin: 100px 0 50px 0;
+  text-align: center;
+  font-size: 30px;
+  color: white;
 }
-.fourth-wrap .fourth-container {
+.solar-system__wrap .solar-system__container .solar-system__detail {
+  text-align: center;
+  color: white;
+  padding: 0 200px 60px 200px;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap {
   margin: 0 auto;
-  width: 1680px;
-  height: 738px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap .Mercury {
+  width: 300px;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap .Venus {
+  width: 210px;
+  margin: 0 50px 0 0;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap .Earth {
+  width: 210px;
+  margin: 0 50px 0 0;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap .Mars {
+  width: 220px;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap .Jupiter {
+  width: 270px;
+  margin: 0 50px 0 120px;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap .Saturn {
+  width: 220px;
+  margin: 0 50px 0 0;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap .Uranus {
+  width: 220px;
+  margin: 0 50px 0 0;
+}
+.solar-system__wrap .solar-system__container .system-image__wrap .Neptune {
+  width: 310px;
+  margin: 0 50px 0 0;
 }
 
 .fifth-wrap {

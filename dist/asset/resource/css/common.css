@@ -25,15 +25,18 @@ header {
 .header-wrap .icon-title {
   font-size: 1.5em;
   font-weight: lighter;
+  color: white;
 }
 .header-wrap .header-nav {
   margin: 0 0 0 50px;
 }
 .header-wrap .header-nav a {
+  color: white;
   font-size: 1em;
   margin: 0 0 0 40px;
 }
 .header-wrap .header-button__wrap .login-button {
+  color: white;
   width: 140px;
   height: 40px;
   background: none;
@@ -49,6 +52,7 @@ header {
   border: 1px solid black;
 }
 .header-wrap .header-button__wrap .register-button {
+  color: white;
   margin: 0 0 0 20px;
   width: 140px;
   height: 40px;
