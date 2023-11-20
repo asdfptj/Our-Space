@@ -34,9 +34,16 @@
         .earth-image {
             width: 500px;
         }
+        @keyframes cursor{
+            50%{ border-color: transparent; }
+          }
         .main-title {
+            display: table-cell;
             font-size: 60px;
             color: white;
+            border-right: .05em solid white;
+            animation: cursor 0.5s ease infinite;
+
         }
         .main-button {
             margin: 0 0 60px 0;

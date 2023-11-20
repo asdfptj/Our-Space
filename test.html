@@ -18,7 +18,7 @@
       }</style>
   </head>
   <body>
-    <h1 class="text"></h1>
+    <p class="text"></p>
     <script>
 const content = "Typing Effect"
 const text = document.querySelector(".text")
@@ -27,12 +27,10 @@ let index = 0;
 function typing(){
   text.textContent += content[index++]
   if(index > content.length){
-    text.textContent = ""
-    index = 0;
+    text.textContent = "Typing Effect"
   }
 }
-setInterval(typing, 500)
-
+setInterval(typing, 100)
     </script>
   </body>
 </html>
