@@ -196,7 +196,7 @@
 .solar-system__wrap .solar-system__container .solar-system__detail {
   text-align: center;
   color: white;
-  padding: 0 200px 60px 200px;
+  padding: 0 200px 40px 200px;
   font-size: 22px;
   font-weight: lighter;
 }
@@ -232,21 +232,66 @@
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Uranus {
   width: 220px;
-  margin: 0 50px 0 0;
+  margin: 0 10px 0 0;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Neptune {
   width: 310px;
   margin: 0 50px 0 0;
 }
 
-.fifth-wrap {
+.bottom-wrap {
   width: 100%;
 }
-.fifth-wrap .fifth-container {
+.bottom-wrap .bottom-container {
   margin: 0 auto;
   width: 1680px;
   height: 340px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bottom-wrap .bottom-container .slogan {
+  width: 900px;
+  color: white;
+  font-size: 30px;
+}
+.bottom-wrap .bottom-container .cta-buttons {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-wrap .bottom-container .cta-buttons .join-button {
+  color: white;
+  width: 140px;
+  height: 40px;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+.bottom-wrap .bottom-container .cta-buttons .join-button:hover {
+  background: white;
+  opacity: 0.5;
+  color: black;
+  border: 1px solid black;
+}
+.bottom-wrap .bottom-container .cta-buttons .contact-button {
+  color: white;
+  width: 140px;
+  height: 40px;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+.bottom-wrap .bottom-container .cta-buttons .contact-button:hover {
+  background: white;
+  opacity: 0.5;
+  color: black;
+  border: 1px solid black;
 }
 
 footer {
@@ -257,4 +302,50 @@ footer .footer-wrap {
   width: 1680px;
   height: 501px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+footer .footer-wrap .footer-top__wrap {
+  padding: 80px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+}
+footer .footer-wrap .footer-top__wrap .left-sitemap {
+  display: flex;
+}
+footer .footer-wrap .footer-top__wrap .left-sitemap a {
+  color: white;
+  margin: 0 50px 0 50px;
+  font-weight: 900;
+}
+footer .footer-wrap .footer-top__wrap .right-sitemap {
+  display: flex;
+}
+footer .footer-wrap .footer-top__wrap .right-sitemap a {
+  color: white;
+  margin: 0 50px 0 50px;
+  font-weight: 900;
+}
+footer .footer-wrap .footer-bottom__wrap {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0 0 0;
+}
+footer .footer-wrap .footer-bottom__wrap img {
+  width: 30px;
+  margin: 0 30px 0 30px;
+}
+footer .footer-wrap .footer-bottom__text {
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+footer .footer-wrap .footer-logo {
+  margin: 0 0 0 -80px;
+  background-image: url("/dist/asset/resource/img/common/icon/footerlogo.png");
+  height: 100px;
+  width: 300px;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

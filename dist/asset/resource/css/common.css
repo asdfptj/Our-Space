@@ -15,17 +15,12 @@ header {
   display: flex;
   align-items: center;
 }
-.header-wrap .header-icon {
-  background-image: url("/dist/asset/resource/img/common/icon/userlmn_c0cc14acfec520c2bc91e4e38228ce34.png");
+.header-wrap a .header-icon {
+  background-image: url("/dist/asset/resource/img/common/icon/mainlogo.png");
   background-position: center;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 200px;
   background-size: cover;
-}
-.header-wrap .icon-title {
-  font-size: 1.5em;
-  font-weight: lighter;
-  color: white;
 }
 .header-wrap .header-nav {
   margin: 0 0 0 50px;

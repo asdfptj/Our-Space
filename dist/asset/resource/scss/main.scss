@@ -196,7 +196,7 @@
             &detail {
             text-align: center;
             color: white;
-            padding: 0 200px 60px 200px;
+            padding: 0 200px 40px 200px;
             font-size: 22px;
             font-weight: lighter;
             }
@@ -232,7 +232,7 @@
             }
             .Uranus {
                 width: 220px;
-                margin: 0 50px 0 0;
+                margin: 0 10px 0 0;
             }
             .Neptune {
                 width: 310px;
@@ -242,13 +242,59 @@
     }
 }
 
-.fifth-wrap {
+.bottom-wrap {
     width: 100%;
-    .fifth-container {
+    .bottom-container {
         margin: 0 auto;
         width: 1680px;
         height: 340px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .slogan {
+            width: 900px;
+            color: white;
+            font-size: 30px;
+        }
+        .cta-buttons {
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            .join-button {
+                color: white;
+                width: 140px;
+                height: 40px;
+                background: none;
+                border: 1px solid white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.5s ease;
+                &:hover {
+                    background: white;
+                    opacity: 0.5;
+                    color: black;
+                    border: 1px solid black;
+                }
+            }
+            .contact-button {
+                // margin: 0 0 0 100px;
+                color: white;
+                width: 140px;
+                height: 40px;
+                background: none;
+                border: 1px solid white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.5s ease;
+                &:hover {
+                    background: white;
+                    opacity: 0.5;
+                    color: black;
+                    border: 1px solid black;
+                }
+        }
+    }
     }
 }
 footer {
@@ -258,5 +304,54 @@ footer {
         width: 1680px;
         height: 501px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        .footer-top__wrap {
+            padding: 80px 0 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 0 auto;
+            .left-sitemap {
+                display: flex;
+                a {
+                    color: white;
+                    margin: 0 50px 0 50px;
+                    font-weight: 900;
+                }
+                
+            }
+            .right-sitemap {
+                display: flex;
+                a {
+                    color: white;
+                    margin: 0 50px 0 50px;
+                    font-weight: 900;
+                }
+            }
+          
+        }
+        .footer-bottom__wrap {
+            display: flex;
+            justify-content: center;
+            margin: 70px 0 0 0;
+            img {
+                width: 30px;
+                margin: 0 30px 0 30px;
+            }
+            
+        }
+        .footer-bottom__text {
+            padding-top: 20px;
+            font-size: 20px;
+             color: white;   
+             text-align: center;
+        }
+        .footer-logo {
+            margin: 0 0 0 -80px;
+            background-image: url("/dist/asset/resource/img/common/icon/footerlogo.png");
+            height: 100px;
+            width: 300px;
+            background-size: cover;
+        }
     }
 }
