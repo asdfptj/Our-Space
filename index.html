@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./dist/asset/resource/css/sub.css">
 </head>
 
-<body>
+<body onselectstart="return false" ondragstart="return false">
 
     <div class="wrap">
         <video class="video-background" autoplay muted loop>
@@ -25,18 +25,18 @@
                             <div class="header-icon"><img src="./dist/asset/resource/img/common/icon/mainlogo.png" alt="mainlogo"></div>
                         </span>
                     </a>
-                    <div class="header-nav">
-                        <a href="">Features</a>
-                        <a href="">Pricing</a>
-                        <a href="">Comunity</a>
-                        <a href="">Support</a>
-                    </div>
+                    <ul class="header-nav">
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Comunity</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
                 </div>
                 <div class="header-button__wrap">
-                    <button class="login-button">Log in</button>
-                    <button class="register-button">Register</button>
+                    <button type="button" class="login-button">Log in</button>
+                    <button type="button" class="register-button">Register</button>
                 </div>
-
+                <div class="burger-menu">&#9776;</div>
 
             </div>
         </header>
@@ -47,7 +47,7 @@
                     <span><img src="./dist/asset/resource/img/main/earth-11009-removebg-preview.png" alt=""
                             class="earth-image"></span>
                     <p class="main-title"></p>
-                    <button class="main-button">Join Today</button>
+                    <button type="button" class="main-button">Join Today</button>
                 </div>
             </div>
             <div class="intro-wrap">
@@ -67,7 +67,7 @@
                                 provides beautiful visuals of galaxy collisions and interesting facts about their
                                 effects, giving users a sense of the grandeur of the universe.
                             </p>
-                            <button class="menu-button">Learn more</button>
+                            <button type="button" class="menu-button">Learn more</button>
                         </div>
 
                         <div class="intro-menu">
@@ -80,7 +80,7 @@
                                 phenomenon of black holes and introduces users to the mysterious world of black holes
                                 through intuitive explanations of gravitational distortion and theory.
                             </p>
-                            <button class="menu-button">Learn more</button>
+                            <button type="button" class="menu-button">Learn more</button>
                         </div>
 
                         <div class="intro-menu">
@@ -93,7 +93,7 @@
                                 providing information on ongoing missions, unique characteristics of planets, and
                                 innovative technologies in robotics and spacecraft.
                             </p>
-                            <button class="menu-button">Learn more</button>
+                            <button type="button" class="menu-button">Learn more</button>
                         </div>
 
                         <div class="intro-menu">
@@ -107,7 +107,7 @@
                                 time. Users will join a virtual journey into the past and future and gain a new
                                 perspective on the universe.
                             </p>
-                            <button class="menu-button">Learn more</button>
+                            <button type="button" class="menu-button">Learn more</button>
                         </div>
 
                     </div>
@@ -197,8 +197,8 @@
                     <p class="slogan">A place to explore the mysteries of the universe and learn everything about it.
                         This is where your journey begins.</p>
                     <div class="cta-buttons">
-                        <button class="join-button">Join Today</button>
-                        <button class="contact-button">Contact Us</button>
+                        <button type="button" class="join-button">Join Today</button>
+                        <button type="button" class="contact-button">Contact Us</button>
                     </div>
                 </div>
             </div>
@@ -245,6 +245,7 @@
             </div>
         </footer>
     </div>
+    <script src="./dist/asset/resource/js/lib/jquery-3.7.1.js"></script>
     <script src="./dist/asset/resource/js/main.js"></script>
 </body>
 

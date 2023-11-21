@@ -1,3 +1,7 @@
+* {
+  font-size: 62.5%;
+}
+
 header {
   width: 100%;
 }
@@ -7,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 1680px;
+  max-width: 1680px;
   height: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -24,15 +28,23 @@ header {
   width: 200px;
 }
 .header-wrap .header-nav {
-  margin: 0 0 0 50px;
+  display: flex;
 }
 .header-wrap .header-nav a {
   color: white;
-  font-size: 1em;
+  font-size: 40em;
   margin: 0 0 0 40px;
+}
+.header-wrap .burger-menu {
+  color: white;
+  font-size: 30em;
+  cursor: pointer;
+  display: none;
 }
 .header-wrap .header-button__wrap {
   margin: 0 50px 0 0;
+  display: flex;
+  font-size: 14em;
 }
 .header-wrap .header-button__wrap .login-button {
   color: white;
@@ -67,6 +79,37 @@ header {
   color: black;
   border: 1px solid black;
 }
+@media (max-width: 768px) {
+  .header-wrap .header-wrap {
+    margin: 0;
+    padding: 0;
+    background: red;
+  }
+  .header-wrap .header-nav {
+    display: none; /* Hide navigation links on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    text-align: center;
+  }
+  .header-wrap .header-nav a {
+    color: white;
+    font-size: 100em;
+  }
+  .header-wrap .header-nav.show {
+    display: flex; /* Show navigation links when the menu is open */
+  }
+  .header-wrap .header-nav li {
+    margin: 10px 0;
+  }
+  .header-wrap .burger-menu {
+    display: block; /* Show the burger menu button on smaller screens */
+  }
+  .header-wrap .header-button__wrap {
+    display: none;
+  }
+}
 
 footer {
   width: 100%;
@@ -84,6 +127,7 @@ footer .footer-wrap .footer-top__wrap {
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0 auto;
+  font-size: 25em;
 }
 footer .footer-wrap .footer-top__wrap .left-sitemap {
   display: flex;
@@ -123,4 +167,13 @@ footer .footer-wrap .footer-logo {
 }
 footer .footer-wrap .footer-logo img {
   width: 300px;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 41.6666666667%;
+  }
+  .header-nav a {
+    font-size: 62.5%;
+  }
 }/*# sourceMappingURL=common.css.map */
