@@ -129,7 +129,7 @@
 .middle-first__wrap .middle-first__container {
   margin: 0 auto;
   max-width: 1680px;
-  max-height: 600px;
+  max-height: 800px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
 }
@@ -140,7 +140,7 @@
 .middle-first__wrap .middle-first__container .first-left span {
   display: inline-block;
   height: 600px;
-  max-width: 600px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,16 +169,18 @@
 @media (max-width: 768px) {
   .middle-first__wrap .middle-first__container {
     flex-direction: column;
-    justify-content: space-between;
   }
   .middle-first__wrap .first-left {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .middle-first__wrap .first-left span {
     max-height: 300px;
     flex-direction: row;
   }
   .middle-first__wrap .first-right {
+    text-align: center;
     align-items: center;
   }
   .middle-first__wrap .first-right__title {
@@ -199,13 +201,32 @@
 .middle-second__wrap .middle-second__container {
   margin: 0 auto;
   max-width: 1680px;
-  height: 600px;
+  max-height: 800px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
 }
+.middle-second__wrap .middle-second__container .second-right {
+  margin: 0 0 0 50px;
+  width: 50%;
+}
+.middle-second__wrap .middle-second__container .second-right span {
+  display: inline-block;
+  height: 600px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middle-second__wrap .middle-second__container .second-right span .video-galaxy {
+  max-width: 100%;
+  border-radius: 5px;
+}
 .middle-second__wrap .middle-second__container .second-left {
   width: 50%;
-  margin: 220px 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .middle-second__wrap .middle-second__container .second-left__title {
   font-size: 38em;
@@ -217,15 +238,33 @@
   font-size: 26em;
   color: white;
 }
-.middle-second__wrap .middle-second__container .second-right {
-  margin: 0 0 0 50px;
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-.middle-second__wrap .middle-second__container .second-right .video-galaxy {
-  width: 700px;
-  border-radius: 5px;
+@media (max-width: 768px) {
+  .middle-second__wrap .middle-second__container {
+    flex-direction: column;
+  }
+  .middle-second__wrap .second-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .middle-second__wrap .second-right span {
+    max-height: 300px;
+    flex-direction: row;
+  }
+  .middle-second__wrap .second-left {
+    text-align: center;
+    align-items: center;
+  }
+  .middle-second__wrap .second-left__title {
+    font-size: 38em;
+    font-weight: 900;
+    color: white;
+    margin: 0 0 40px 0;
+  }
+  .middle-second__wrap .second-left__detail {
+    font-size: 26em;
+    color: white;
+  }
 }
 
 .solar-system__wrap {
@@ -234,7 +273,7 @@
 .solar-system__wrap .solar-system__container {
   margin: 0 auto;
   max-width: 1680px;
-  height: 738px;
+  max-height: 2500px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .solar-system__wrap .solar-system__container .solar-system__title {
@@ -256,7 +295,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1400px;
+  max-width: 1400px;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Mercury {
   width: 300px;
@@ -300,6 +339,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .bottom-wrap .bottom-container .bottom-container {
+    flex-direction: column;
+  }
 }
 .bottom-wrap .bottom-container .slogan {
   width: 900px;
