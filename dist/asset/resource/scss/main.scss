@@ -16,7 +16,7 @@
 }
 
 .main-wrap {
-    width: 100%;
+    max-width: 100%;
     
     .main-container {
         margin: 0 auto;
@@ -32,16 +32,25 @@
 
 
         }
-        @keyframes cursor{
-            50%{ border-color: transparent; }
-          }
+        
         .main-title {
+            @keyframes cursor{
+                50%{ border-color: transparent; }
+              }
             display: table-cell;
             font-size: 65em;
             color: white;
             border-right: .05em solid white;
             animation: cursor 0.5s ease infinite;
 
+        }
+        @media (max-width:768px) {
+            .main-title {
+                font-size: 65em;
+                color: white;
+                text-align: center;
+    
+            }
         }
         .main-button {
             font-size: 14em;
@@ -65,7 +74,7 @@
 }
 
 .intro-wrap {
-    width: 100%;
+    max-width: 100%;
     .intro-container {
         margin: 0 auto;
         max-width: 1680px;
@@ -119,26 +128,43 @@
 }
 
 .middle-first__wrap {
-    width: 100%;
+    max-width: 100%;
     .middle-first__container {
         margin: 0 auto;
-        width: 1680px;
-        height: 600px;
+        max-width: 1680px;
+        max-height: 600px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;
+        
         .first-left {
             margin: 0 0 0 50px;
             width: 50%;
-            display: flex;
-            align-items: center;
-            .mars-robot {
-                width: 700px;
-                border-radius: 5px;
+           
+
+            
+            span {
+                display: inline-block;
+                height:600px;
+                max-width:600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .mars-robot {
+                    max-width: 100%;;
+                    border-radius: 5px;
+                }
             }
+            
+            
         }
+        
         .first-right {
             width: 50%;
-            margin: 220px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             &__title {
                 font-size: 38em;
                 font-weight: 900;
@@ -152,13 +178,40 @@
             }
     }
 }
+@media (max-width:768px) {
+    .middle-first__container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .first-left {
+        width: 50%;
+        span {
+            max-height:300px;
+            flex-direction: row;
+        }
+    }
+    .first-right {
+        align-items: center;
+        &__title {
+            font-size: 38em;
+            font-weight: 900;
+            color: white;
+            margin: 0 0 40px 0;
+        }
+        &__detail {
+            font-size:26em;
+            color: white;
+            
+        }
+}
+}
 }
 
 .middle-second__wrap {
-    width: 100%;
+    max-width: 100%;
     .middle-second__container {
         margin: 0 auto;
-        width: 1680px;
+        max-width: 1680px;
         height: 600px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;
@@ -191,10 +244,10 @@
 }
 }
 .solar-system__wrap {
-    width: 100%;
+    max-width: 100%;
     .solar-system__container {
         margin: 0 auto;
-        width: 1680px;
+        max-width: 1680px;
         height: 738px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         .solar-system__ {
@@ -254,10 +307,10 @@
 }
 
 .bottom-wrap {
-    width: 100%;
+    max-width: 100%;
     .bottom-container {
         margin: 0 auto;
-        width: 1680px;
+        max-width: 1680px;
         height: 340px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;

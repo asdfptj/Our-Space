@@ -114,13 +114,14 @@ header {
         .header-button__wrap {
             display: none;
         }
+        
     }
 }
 footer {
-    width: 100%;
+    max-width: 100%;
     .footer-wrap {
         margin: 0 auto;
-        width: 1680px;
+        max-width: 1680px;
         height: 501px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         .footer-top__wrap {
