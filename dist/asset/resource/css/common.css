@@ -155,7 +155,7 @@ footer .footer-wrap .footer-bottom__wrap img {
 }
 footer .footer-wrap .footer-bottom__text {
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 13em;
   color: white;
   text-align: center;
 }
@@ -184,9 +184,6 @@ footer .footer-wrap .footer-logo img {
 @media (max-width: 1200px) {
   html, body {
     font-size: 52.0833333333%;
-  }
-  .header-nav a {
-    font-size: 62.5%;
   }
 }
 @media (max-width: 1024px) {

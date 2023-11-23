@@ -164,7 +164,7 @@ footer {
         }
         .footer-bottom__text {
             padding-top: 20px;
-            font-size: 20px;
+            font-size: 13em;
              color: white;   
              text-align: center;
         }
@@ -181,6 +181,7 @@ footer {
         .footer-top__wrap {
             flex-direction: column;
         }
+        
         .footer-logo {
             margin: 50px 0 50px 0;
         }
@@ -192,15 +193,11 @@ footer {
      html, body{
          font-size:calc(62.5% / 1.1);
      }
+     
 }
 @media (max-width:1200px){ //1200 이하 모바일 반응형
     html, body{
         font-size:calc(62.5% / 1.2);
-    }
-    .header-nav {
-        a {
-            font-size:calc(62.5% / 1);
-        }
     }
 }
 @media (max-width:1024px){ //1024 이하 모바일 반응형
