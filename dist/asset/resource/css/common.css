@@ -160,16 +160,19 @@ footer .footer-wrap .footer-bottom__text {
   text-align: center;
 }
 footer .footer-wrap .footer-logo {
-  margin: 0 0 0 -80px;
+  display: inline-block;
   height: 100px;
-  width: 300px;
+  max-width: 300px;
 }
 footer .footer-wrap .footer-logo img {
-  width: 300px;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   footer .footer-top__wrap {
     flex-direction: column;
+  }
+  footer .footer-logo {
+    margin: 50px 0 50px 0;
   }
 }
 

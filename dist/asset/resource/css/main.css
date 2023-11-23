@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 .video-background {
   position: fixed;
   right: 0;
@@ -29,8 +33,11 @@
   height: 960px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.main-wrap .main-container .earth-image {
-  width: 500px;
+.main-wrap .main-container span {
+  max-width: 500px;
+}
+.main-wrap .main-container span .earth-image {
+  width: 100%;
 }
 .main-wrap .main-container .main-title {
   display: table-cell;
@@ -342,7 +349,7 @@
 }
 .bottom-wrap .bottom-container .cta-buttons {
   font-size: 22em;
-  width: 400px;
+  width: 300px;
   display: flex;
   justify-content: space-between;
 }
@@ -384,5 +391,8 @@
   }
   .bottom-wrap .slogan {
     text-align: center;
+  }
+  .bottom-wrap .cta-buttons {
+    width: 400em;
   }
 }/*# sourceMappingURL=main.css.map */
