@@ -167,17 +167,8 @@
   color: white;
 }
 @media (max-width: 768px) {
-  .middle-first__wrap .middle-first__container {
-    flex-direction: column;
-  }
-  .middle-first__wrap .first-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .middle-first__wrap .first-left span {
+  .middle-first__wrap span {
     max-height: 300px;
-    flex-direction: row;
   }
   .middle-first__wrap .first-right {
     text-align: center;
@@ -239,9 +230,6 @@
   color: white;
 }
 @media (max-width: 768px) {
-  .middle-second__wrap .middle-second__container {
-    flex-direction: column;
-  }
   .middle-second__wrap .second-right {
     display: flex;
     align-items: center;
@@ -285,7 +273,6 @@
 .solar-system__wrap .solar-system__container .solar-system__detail {
   text-align: center;
   color: white;
-  padding: 0 200px 40px 200px;
   font-size: 23em;
   font-weight: lighter;
 }
@@ -298,34 +285,42 @@
   max-width: 1400px;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Mercury {
-  width: 300px;
+  max-width: 300px;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Venus {
-  width: 210px;
+  max-width: 210px;
   margin: 0 50px 0 0;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Earth {
-  width: 210px;
+  max-width: 210px;
   margin: 0 50px 0 0;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Mars {
-  width: 220px;
+  max-width: 220px;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Jupiter {
-  width: 270px;
+  max-width: 270px;
   margin: 0 50px 0 120px;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Saturn {
-  width: 220px;
+  max-width: 220px;
   margin: 0 50px 0 0;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Uranus {
-  width: 220px;
+  max-width: 220px;
   margin: 0 10px 0 0;
 }
 .solar-system__wrap .solar-system__container .system-image__wrap .Neptune {
-  width: 310px;
+  max-width: 310px;
   margin: 0 50px 0 0;
+}
+@media (max-width: 768px) {
+  .solar-system__wrap .bottom-container {
+    flex-direction: column;
+  }
+  .solar-system__wrap .system-image__wrap {
+    flex-direction: column;
+  }
 }
 
 .bottom-wrap {
@@ -340,13 +335,8 @@
   align-items: center;
   justify-content: space-around;
 }
-@media (max-width: 768px) {
-  .bottom-wrap .bottom-container .bottom-container {
-    flex-direction: column;
-  }
-}
 .bottom-wrap .bottom-container .slogan {
-  width: 900px;
+  max-width: 900px;
   color: white;
   font-size: 31em;
 }
@@ -387,4 +377,12 @@
   opacity: 0.5;
   color: black;
   border: 1px solid black;
+}
+@media (max-width: 768px) {
+  .bottom-wrap .bottom-container {
+    flex-direction: column;
+  }
+  .bottom-wrap .slogan {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

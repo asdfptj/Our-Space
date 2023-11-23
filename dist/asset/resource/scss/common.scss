@@ -82,11 +82,10 @@ header {
             }
         }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         .header-wrap {
             margin: 0;
             padding: 0;
-            background: red;
         }
         .header-nav {
             display: none; /* Hide navigation links on smaller screens */
@@ -97,7 +96,6 @@ header {
             text-align: center;
             a {
                 color: white;
-                font-size: 100em;
             }
         }
     
@@ -109,7 +107,8 @@ header {
         }
     
         .burger-menu {
-            display: block; /* Show the burger menu button on smaller screens */
+            display: block; 
+            margin: 0 30px 0 0;
         }
         .header-button__wrap {
             display: none;
@@ -178,16 +177,22 @@ footer {
             }
         }
     }
+    @media (max-width:1200px){
+        .footer-top__wrap {
+            flex-direction: column;
+        }
+    }
 }
 
+
 @media (max-width:1400px){ //1400 이하 모바일 반응형
-    // html, body{
-    //     font-size:calc(62.5% / 1.2);
-    // }
+     html, body{
+         font-size:calc(62.5% / 1.1);
+     }
 }
-@media (max-width:768px){ //1200 이하 모바일 반응형
+@media (max-width:1200px){ //1200 이하 모바일 반응형
     html, body{
-        font-size:calc(62.5% / 1.5);
+        font-size:calc(62.5% / 1.2);
     }
     .header-nav {
         a {
@@ -196,8 +201,12 @@ footer {
     }
 }
 @media (max-width:1024px){ //1024 이하 모바일 반응형
-
+    html, body{
+        font-size:calc(62.5% / 1.3);
+    }
 }
-@media (min-width:750px){ //750 이상 웹 반응형
-
+@media (max-width:750px){ //750 이상 웹 반응형
+    html, body{
+        font-size:calc(62.5% / 1.5);
+    }
 }

@@ -79,11 +79,10 @@ header {
   color: black;
   border: 1px solid black;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header-wrap .header-wrap {
     margin: 0;
     padding: 0;
-    background: red;
   }
   .header-wrap .header-nav {
     display: none; /* Hide navigation links on smaller screens */
@@ -95,7 +94,6 @@ header {
   }
   .header-wrap .header-nav a {
     color: white;
-    font-size: 100em;
   }
   .header-wrap .header-nav.show {
     display: flex; /* Show navigation links when the menu is open */
@@ -104,7 +102,8 @@ header {
     margin: 10px 0;
   }
   .header-wrap .burger-menu {
-    display: block; /* Show the burger menu button on smaller screens */
+    display: block;
+    margin: 0 30px 0 0;
   }
   .header-wrap .header-button__wrap {
     display: none;
@@ -168,12 +167,32 @@ footer .footer-wrap .footer-logo {
 footer .footer-wrap .footer-logo img {
   width: 300px;
 }
+@media (max-width: 1200px) {
+  footer .footer-top__wrap {
+    flex-direction: column;
+  }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   html, body {
-    font-size: 41.6666666667%;
+    font-size: 56.8181818182%;
+  }
+}
+@media (max-width: 1200px) {
+  html, body {
+    font-size: 52.0833333333%;
   }
   .header-nav a {
     font-size: 62.5%;
+  }
+}
+@media (max-width: 1024px) {
+  html, body {
+    font-size: 48.0769230769%;
+  }
+}
+@media (max-width: 750px) {
+  html, body {
+    font-size: 41.6666666667%;
   }
 }/*# sourceMappingURL=common.css.map */

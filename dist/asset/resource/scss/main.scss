@@ -179,18 +179,9 @@
     }
 }
 @media (max-width:768px) {
-    .middle-first__container {
-        flex-direction: column;
-    }
-    .first-left {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         span {
             max-height:300px;
-            flex-direction: row;
         }
-    }
     .first-right {
         text-align: center;
         align-items: center;
@@ -260,9 +251,6 @@
     }
 }
 @media (max-width:768px) {
-    .middle-second__container {
-        flex-direction: column;
-    }
     .second-right {
         display: flex;
         align-items: center;
@@ -307,7 +295,6 @@
             &detail {
             text-align: center;
             color: white;
-            padding: 0 200px 40px 200px;
             font-size: 23em;
             font-weight: lighter;
             }
@@ -320,37 +307,47 @@
             justify-content: center;
             max-width: 1400px;
             .Mercury {
-                width: 300px;
+                max-width: 300px;
             }
             .Venus {
-                width: 210px;
+                max-width: 210px;
                 margin: 0 50px 0 0;
             }
             .Earth {
-                width: 210px;
+                max-width: 210px;
                 margin: 0 50px 0 0;
             }
             .Mars {
-                width: 220px;
+                max-width: 220px;
             }
             .Jupiter {
-                width: 270px;
+                max-width: 270px;
                 margin: 0 50px 0 120px;
             }
             .Saturn {
-                width: 220px;
+                max-width: 220px;
                 margin: 0 50px 0 0;
             }
             .Uranus {
-                width: 220px;
+                max-width: 220px;
                 margin: 0 10px 0 0;
             }
             .Neptune {
-                width: 310px;
+                max-width: 310px;
                 margin: 0 50px 0 0;
             }
         }
     }
+    @media (max-width:768px) {
+        .bottom-container {
+            flex-direction: column;
+
+        }
+        .system-image__wrap {
+            flex-direction: column;
+        }
+    }
+
 }
 
 .bottom-wrap {
@@ -364,14 +361,9 @@
         align-items: center;
         justify-content: space-around;
 
-        @media (max-width:768px) {
-            .bottom-container {
-        flex-direction: column;//적용안됨
-
-            }
-        }
+        
         .slogan {
-            width: 900px;
+            max-width: 900px;
             color: white;
             font-size: 31em;
         }
@@ -414,6 +406,16 @@
                 }
         }
     }
+    }
+    @media (max-width:768px) {
+        .bottom-container {
+    flex-direction: column;
+
+        }
+        .slogan {
+            text-align: center;
+
+        }
     }
 }
 
