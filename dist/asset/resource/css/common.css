@@ -94,6 +94,7 @@ header {
   }
   .header-wrap .header-nav a {
     color: white;
+    font-size: 70em;
   }
   .header-wrap .header-nav.show {
     display: flex; /* Show navigation links when the menu is open */
